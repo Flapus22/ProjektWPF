@@ -1,0 +1,16 @@
+﻿<Window x:Class="ProjektWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProjektWPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="450" ResizeMode="CanMinimize">
+    <Canvas x:Name="MyCanvas" Focusable="True" KeyDown="OnKeyDown" KeyUp="OnKeyUp">
+        
+        <Rectangle Name="Player" Tag="Player" Fill="Red"  Height="80" Width="60" Canvas.Left="198" Canvas.Top="400" />
+        <Label FontSize="24" x:Name="scoreLabel" Content="Score: 0" FontWeight="ExtraBold" Canvas.Top="529"
+               Background="White" Width="175"></Label>
+
+    </Canvas>
+</Window>
